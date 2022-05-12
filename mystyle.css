@@ -171,14 +171,14 @@ a.nav {
 
    .header-inner {
      flex-direction: column;
-     padding-top: 15px;
+     padding-top: 12px;
      padding-bottom: 0;
    }
 
    .logo {
-   	height: 40px;
+   	height: 35px;
    	margin: auto;
-   	padding-top: 5px;
+   	padding-top: 4px;
    }
 
    .socialIconsAll {
