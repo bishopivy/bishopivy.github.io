@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: black;
+
 }
 
 @font-face {
@@ -23,14 +23,19 @@ footer {
 
 header { background-color: transparent; }
 
+.header-iframe {
+	width: 100%;
+}
+
 .header-inner {
 	display: flex;
 	padding-top: 48px;
 	padding-right: 46px;
 	padding-left: 46px;
-	justify-content: flex-end;
+	justify-content: space-between;
 	line-height: 30px;
 	padding-bottom:50px;
+	background-color: rgba(0,0,0, 0.8);
 }
 
 .footer-inner {
@@ -77,6 +82,9 @@ a.nav {
 	margin: auto;
 	margin-right: 15px;
 	margin-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
 .socialIconsAll {
@@ -101,6 +109,74 @@ a.nav {
 .logo {
 	margin: auto;
 	margin-left: 0;
+}
+
+.toggle-button {
+    position: absolute;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+	margin: auto;
+	margin-right: 20px;
+	right: 0;
+}
+
+.toggle-button .bar {
+	height: 1px;
+	width: 100%;
+	background-color: white;
+	margin: 2px
+}
+
+@media (max-width: 650px) {
+   .toggle-button {
+   	  display: flex;
+   }
+
+   .navLinks {
+   	flex-direction: column;
+   	text-align: center;
+   }
+
+   .topLinks {
+   	display: none;
+   	flex-direction: column;
+   	line-height: 40px;
+   }
+
+   .topLinks.active {
+   	 display: flex;
+   }
+
+
+   .header-inner {
+     flex-direction: column;
+     padding-top: 15px;
+     padding-bottom: 0;
+   }
+
+   .logo {
+   	height: 40px;
+   	margin: auto;
+   	padding-top: 5px;
+   }
+
+   .socialIconsAll {
+   	text-align: center;
+   	padding-top: 20px;
+   }
+
+   .header-iframe {
+   	height: 100%;
+   	position: fixed;
+   	z-index: 9999;
+   }
+
+   .page-content {
+   	padding-top: 100px;
+   }
 }
 
 
