@@ -23,6 +23,12 @@ footer {
 
 header { background-color: transparent; }
 
+.four04 {
+	text-align: center;
+	font-size: 40;
+	margin: auto;
+}
+
 .header-iframe {
 	width: 100%;
 }
@@ -50,7 +56,6 @@ header { background-color: transparent; }
     display: flex;
     
 	color: white;
-	background-color: black;
 	
 	font-family: lores-9-wide, sans-serif;
 	font-weight: 400;
