@@ -9,25 +9,24 @@
 	
 	<link rel="icon" type="image/x-icon" href = "./images/IVY.png">
 	<meta property="og:image" content="./images/bishop-ivy.jpg">
+	<script src="header-resize.js" defer></script>
 </head>
 
 <script>
-function thumbh(wee1, wee2) {
-  document.getElementByID(wee1).style.opacity = 0;
-  document.getElementByID(wee2).style.opacity = 0;
-  setTimeout(thumbh, 400, wee1, wee2);
-}
 
-function thumb(wee1, wee2) {
-  document.getElementById(wee1).style.display = "none";
-  document.getElementById(wee2).style.display = "none";
-}
+	function thumb(wee1, wee2) {
+	  document.getElementById(wee1).style.display = "none";
+	  document.getElementById(wee2).style.display = "none";
+	}
+
 </script>
 
 
 
 <body style="background-color: black">
-	<iframe src="./header.html" scrolling="no" frameBorder=0 class="header-iframe"></iframe>
+	<iframe src="./header.html" scrolling="no" frameBorder=0 class="header-iframe" id="header-iframe"></iframe>
+
+	
 
 
 	<div class="mobile-break" style="height: 90px"></div>
