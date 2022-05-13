@@ -41,7 +41,7 @@ header { background-color: transparent; }
 	justify-content: space-between;
 	line-height: 30px;
 	padding-bottom:50px;
-	background-color: rgba(0,0,0, 0.9);
+	
 }
 
 .footer-inner {
@@ -455,6 +455,7 @@ a.button2:hover, a.button2:active {
      flex-direction: column;
      padding-top: 12px;
      padding-bottom: 0;
+     background-color: rgba(0,0,0, 0.9);
    }
 
    .logo {
