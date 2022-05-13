@@ -22,6 +22,7 @@
                 class="button g-recaptcha"
                 id="btnSubmit" 
                 data-sitekey="6Ldg5uYfAAAAAGgGIw5YKkIy7sIK_UJP0DUJs9bh"
+                data-callback='onSubmit'
                 >SUBMIT</button>
     </form>
 
@@ -47,13 +48,13 @@
 
         function loadThankYou() {
             submitted = true;
-            news.submit();
+            //news.submit();
 	        sendPostMessage();
         }
-        /*
+        
         function onSubmit(token) {
-         document.getElementById("my-form").submit();
-       }*/
+           document.getElementById("my-form").submit();
+        }
 
         window.onload = () => sendPostMessage();
         window.onresize = () => sendPostMessage();
