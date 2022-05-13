@@ -1,0 +1,42 @@
+<head>
+	<title>BISHOP IVY*</title>
+	<link rel="stylesheet" href="https://use.typekit.net/miw6dhd.css">
+	<link rel="stylesheet" type = "text/css" href="mystyle.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+</head>
+
+
+
+
+<body>
+	<form action="https://script.google.com/a/macros/bishopivy.com/s/AKfycbxa3Z5n05tYT1FAQPscgHMUtULNWcxw9iH_LGDfMxFEJTc6tAd_BpxjFdjznCZwGjYtbA/exec" 
+            method="POST"
+            target="_self"
+            id="my-form">
+        <textarea name="First Name" placeholder="First Name"></textarea>
+        <textarea name="Last Name" placeholder="Last Name"></textarea>
+        <textarea name="Email" placeholder="Email"></textarea>
+        <div class = "break" style="height:20"></div>
+        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdpRKgcAAAAAMaYwj666awXn0dONyp5FtOnl0iQ"></div>
+        <div class = "break" style="height:20"></div>
+        <input type="submit" name="submit" class="button" value="SUBMIT">
+    </form>
+
+
+    <script>
+        const news = document.getElementById("my-form")
+        let newsHeight;
+        const sendPostMessage = () => {
+            if (newsHeight !== news.offsetHeight) {
+                newsHeight = news.offsetHeight;
+                window.parent.postMessage({
+                newsFrameHeight: newsHeight
+                }, '*');
+                console.log(newsHeight) // check the message is being sent correctly
+            }
+        }
+        window.onload = () => sendPostMessage();
+        window.onresize = () => sendPostMessage();
+    </script>
+</body>

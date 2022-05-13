@@ -1,7 +1,11 @@
 const iframeHeader = document.getElementsByClassName('header-iframe')[0]
+const iframeNews = document.getElementById('news-iframe')
 
 window.onmessage = (e) => {
-      if (e.data.hasOwnProperty("frameHeight")) {
-        iframeHeader.style.height = `${e.data.frameHeight + 30}px`;
+      if (e.data.hasOwnProperty("headerFrameHeight")) {
+        iframeHeader.style.height = `${e.data.headerFrameHeight + 30}px`;
+      }
+      if (e.data.hasOwnProperty("newsFrameHeight")) {
+        iframeNews.style.height = `${e.data.newsFrameHeight}px`;
       }
     };

@@ -4,7 +4,6 @@
 	<link rel="stylesheet" href="./fonts/TS Block Bold.ttf">
 	<link rel="stylesheet" type = "text/css" href="mystyle.css">
 	<script src="https://kit.fontawesome.com/dd668327a0.js" crossorigin="anonymous"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="icon" type="image/x-icon" href = "./images/IVY.png">
@@ -159,18 +158,8 @@
 			<div class = "break" style="height:20"></div>
 			<small>get updates for shows + new music</small>
 			<div class = "break" style="height:30"></div>
-			<form action="https://script.google.com/a/macros/bishopivy.com/s/AKfycbxa3Z5n05tYT1FAQPscgHMUtULNWcxw9iH_LGDfMxFEJTc6tAd_BpxjFdjznCZwGjYtbA/exec" 
-			      method="POST"
-			      target="_parent"
-			      id="my-form">
-				<textarea name="First Name" placeholder="First Name"></textarea>
-				<textarea name="Last Name" placeholder="Last Name"></textarea>
-				<textarea name="Email" placeholder="Email"></textarea>
-				<div class = "break" style="height:20"></div>
-				<div class="g-recaptcha" data-theme="dark" data-sitekey="6LdpRKgcAAAAAMaYwj666awXn0dONyp5FtOnl0iQ"></div>
-				<div class = "break" style="height:20"></div>
-				<input type="submit" name="submit" class="button" value="SUBMIT">
-			</form>
+			<iframe src="newsletter.html" 
+			    scrolling="no" frameBorder=0 width=100% id="news-iframe"></iframe>
 		</div>
 	</div>
 

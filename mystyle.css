@@ -479,6 +479,11 @@ a.button2:hover, a.button2:active {
    	z-index: 9999;
    }
 
+   .newsletter-iframe {
+	   width: 100%;
+
+   }
+
    .mobile-break {
    	display: flex;
    }

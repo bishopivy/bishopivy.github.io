@@ -3,14 +3,14 @@ const topLinks = document.getElementsByClassName('topLinks')[0]
 const entireHeader = document.getElementsByClassName('header-inner')[0]
 
 
-let height;
+let headerHight;
 const sendPostMessage = () => {
-  if (height !== entireHeader.offsetHeight) {
-    height = entireHeader.offsetHeight;
+  if (headerHight !== entireHeader.offsetHeight) {
+    headerHight = entireHeader.offsetHeight;
     window.parent.postMessage({
-      frameHeight: height
+      headerFrameHeight: headerHight
     }, '*');
-    console.log(height) // check the message is being sent correctly
+    //console.log(headerHight) // check the message is being sent correctly
   }
 }
 
