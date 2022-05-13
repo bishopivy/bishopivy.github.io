@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type = "text/css" href="mystyle.css">
 	<script src="https://kit.fontawesome.com/dd668327a0.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	
 	<link rel="icon" type="image/x-icon" href = "./images/IVY.png">
 	<meta property="og:image" content="./images/bishop-ivy.jpg">
@@ -160,8 +161,21 @@
 			<div class = "break" style="height:20"></div>
 			<small>get updates for shows + new music</small>
 			<div class = "break" style="height:30"></div>
-			<iframe src="newsletter.html" 
-			    scrolling="no" frameBorder=0 width=100% id="news-iframe"></iframe>
+			<form action="https://script.google.com/macros/s/AKfycbxa3Z5n05tYT1FAQPscgHMUtULNWcxw9iH_LGDfMxFEJTc6tAd_BpxjFdjznCZwGjYtbA/exec" 
+					method="POST"
+					target="_self"
+					id="my-form">
+				<textarea name="First Name" placeholder="First Name" class="news-inputs"></textarea>
+				<textarea name="Last Name" placeholder="Last Name" class="news-inputs"></textarea>
+				<textarea name="Email" placeholder="Email" class="news-inputs"></textarea>
+				<div class = "break" style="height:20"></div>
+				<div class="g-recaptcha" data-sitekey="6LdpRKgcAAAAAMaYwj666awXn0dONyp5FtOnl0iQ"></div>
+				<div class = "break" style="height:20"></div>
+				<button name="btnSubmit" 
+						class="button  g-recaptcha" 
+						id="btnSubmit" 
+						>SUBMIT</button>
+			</form>
 		</div>
 		<div class="newsletter-ty" id="news-thank-you">🤍 thank u 🤍</div>
 	</div>
