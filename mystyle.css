@@ -151,66 +151,6 @@ a.nav {
 	margin-right: 2%;
 }
 
-@media (max-width: 650px) {
-   .toggle-button {
-   	  display: flex;
-   }
-
-   .navLinks {
-   	flex-direction: column;
-   	text-align: center;
-   }
-
-   .topLinks {
-   	display: none;
-   	flex-direction: column;
-   	line-height: 45px;
-   	font-size: 20px;
-   }
-
-   .topLinks.active {
-   	 display: flex;
-   }
-
-
-   .header-inner {
-     flex-direction: column;
-     padding-top: 12px;
-     padding-bottom: 0;
-   }
-
-   .logo {
-   	height: 35px;
-   	margin: auto;
-   	padding-top: 4px;
-   }
-
-   .socialIconsAll {
-   	text-align: center;
-   	padding-top: 20px;
-   	padding-bottom:30px;
-   	font-size: 25px;
-   }
-
-   .header-iframe {
-   	/* height: 45px;*/
-   	height: 47;
-   	pointer-events: auto;
-   	position: fixed;
-   	z-index: 9999;
-   }
-
-   .mobile-break {
-   	display: flex;
-   }
-
-   .container-4x5 {
-   	width: 48%;
-   	padding-top: 61.2%;
-   	margin-bottom: 2%;
-   }
-}
-
 
 .photo-holder {
 	width: 25%;
@@ -251,6 +191,12 @@ a.nav {
 	font-size: 19;
 	margin-bottom: 100px;
 	background-color: transparent;
+}
+
+.credit-container {
+	width: 50%;
+	padding-right: 50px;
+
 }
 
 .page-content {
@@ -480,5 +426,71 @@ a.button2:hover, a.button2:active {
 .button:hover, .button:active {   
 	color: black;
 	background-color: white; 
+}
+
+
+@media (max-width: 650px) {
+   .toggle-button {
+   	  display: flex;
+   }
+
+   .navLinks {
+   	flex-direction: column;
+   	text-align: center;
+   }
+
+   .topLinks {
+   	display: none;
+   	flex-direction: column;
+   	line-height: 45px;
+   	font-size: 20px;
+   }
+
+   .topLinks.active {
+   	 display: flex;
+   }
+
+
+   .header-inner {
+     flex-direction: column;
+     padding-top: 12px;
+     padding-bottom: 0;
+   }
+
+   .logo {
+   	height: 35px;
+   	margin: auto;
+   	padding-top: 4px;
+   }
+
+   .socialIconsAll {
+   	text-align: center;
+   	padding-top: 20px;
+   	padding-bottom:30px;
+   	font-size: 25px;
+   }
+
+   .header-iframe {
+   	/* height: 45px;*/
+   	height: 47;
+   	pointer-events: auto;
+   	position: fixed;
+   	z-index: 9999;
+   }
+
+   .mobile-break {
+   	display: flex;
+   }
+
+   .container-4x5 {
+   	width: 48%;
+   	padding-top: 61.2%;
+   	margin-bottom: 2%;
+   }
+
+   .credit-container {
+   	width: 100%;
+   	padding-right: 0;
+   }
 }
 
