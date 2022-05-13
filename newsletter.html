@@ -20,23 +20,36 @@
         <div class = "break" style="height:20"></div>
         <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdpRKgcAAAAAMaYwj666awXn0dONyp5FtOnl0iQ"></div>
         <div class = "break" style="height:20"></div>
-        <input type="submit" name="submit" class="button" value="SUBMIT">
+        <input type="submit" name="submit" class="button" value="SUBMIT" id="submit">
     </form>
 
 
     <script>
         const news = document.getElementById("my-form")
+        const submitButton = document.getElementById("submit")
+
         let newsHeight;
+        let submitted;
         const sendPostMessage = () => {
             if (newsHeight !== news.offsetHeight) {
                 newsHeight = news.offsetHeight;
                 window.parent.postMessage({
                 newsFrameHeight: newsHeight
                 }, '*');
-                console.log(newsHeight) // check the message is being sent correctly
+                //console.log(newsHeight) // check the message is being sent correctly
+            }
+            if (submitted) { 
+                window.parent.postMessage ({submitted: true}, '*');
             }
         }
+
+        function loadThankYou() {
+            submitted = true;
+	        sendPostMessage();
+        }
+
         window.onload = () => sendPostMessage();
         window.onresize = () => sendPostMessage();
+        submitButton.addEventListener('click', loadThankYou);
     </script>
 </body>
