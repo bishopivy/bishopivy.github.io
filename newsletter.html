@@ -18,9 +18,7 @@
         <textarea name="Last Name" placeholder="Last Name"></textarea>
         <textarea name="Email" placeholder="Email"></textarea>
         <div class = "break" style="height:20"></div>
-        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdpRKgcAAAAAMaYwj666awXn0dONyp5FtOnl0iQ"></div>
-        <div class = "break" style="height:20"></div>
-        <input type="submit" name="submit" class="button" value="SUBMIT" id="submit">
+        <button type="submit" name="submit" class="button g-recaptcha"id="submit">SUBMIT</button>
     </form>
 
 
@@ -47,6 +45,10 @@
             submitted = true;
 	        sendPostMessage();
         }
+
+        function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
 
         window.onload = () => sendPostMessage();
         window.onresize = () => sendPostMessage();
