@@ -47,13 +47,13 @@
 
         function loadThankYou() {
             submitted = true;
-            document.getElementById("my-form").submit();
+            news.submit();
 	        sendPostMessage();
         }
-
+        /*
         function onSubmit(token) {
-         document.getElementById("demo-form").submit();
-       }
+         document.getElementById("my-form").submit();
+       }*/
 
         window.onload = () => sendPostMessage();
         window.onresize = () => sendPostMessage();
