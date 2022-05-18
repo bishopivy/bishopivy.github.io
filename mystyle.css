@@ -474,7 +474,7 @@ a.button2:hover, a.button2:active {
 
    .header-inner {
      flex-direction: column;
-     padding-top: 17px;
+     padding-top: 14px;
      padding-bottom: 0;
      background-color: rgba(0,0,0, 0.9);
    }
@@ -501,7 +501,7 @@ a.button2:hover, a.button2:active {
    	height: 52;
    	pointer-events: auto;
    	position: fixed;
-	top: -5;
+	top: -2;
    	z-index: 9999;
    }
 
