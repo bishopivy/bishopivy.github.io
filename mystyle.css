@@ -35,7 +35,7 @@ header { background-color: transparent; }
 
 .header-inner {
 	display: flex;
-	padding-top: 48px;
+	padding-top: 50px;
 	padding-right: 46px;
 	padding-left: 46px;
 	justify-content: space-between;
