@@ -35,7 +35,7 @@ header { background-color: transparent; }
 
 .header-inner {
 	display: flex;
-	padding-top: 50px;
+	padding-top: 48px;
 	padding-right: 46px;
 	padding-left: 46px;
 	justify-content: space-between;
@@ -474,7 +474,7 @@ a.button2:hover, a.button2:active {
 
    .header-inner {
      flex-direction: column;
-     padding-top: 12px;
+     padding-top: 17px;
      padding-bottom: 0;
      background-color: rgba(0,0,0, 0.9);
    }
@@ -482,12 +482,11 @@ a.button2:hover, a.button2:active {
    .logo {
    	height: 35px;
    	margin: auto;
-   	padding-top: 4px;
    }
 
    .logo-img {
 	   width: 140px;
-	   padding-top: 3px
+	   padding-top: 7px
    }
 
    .socialIconsAll {
@@ -499,9 +498,10 @@ a.button2:hover, a.button2:active {
 
    .header-iframe {
    	/* height: 45px;*/
-   	height: 47;
+   	height: 52;
    	pointer-events: auto;
    	position: fixed;
+	top: -5;
    	z-index: 9999;
    }
 
