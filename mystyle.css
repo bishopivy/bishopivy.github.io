@@ -116,6 +116,10 @@ a.nav {
 	margin-left: 0;
 }
 
+.logo-img {
+	width: 162px;
+}
+
 .toggle-button {
     position: absolute;
 	display: none;
@@ -133,6 +137,7 @@ a.nav {
 	width: 100%;
 	background-color: white;
 	margin: auto;
+	transition: 0.3s;
 }
 
 .mobile-break {
@@ -441,6 +446,15 @@ a.button2:hover, a.button2:active {
    	  display: flex;
    }
 
+   .bottom-bar.active {
+      transform: translateX(-5px) rotate(45deg) translateY(-7px) ;
+	  
+   }
+
+   .top-bar.active {
+	  transform: translateX(-5px) rotate(-45deg) translateY(7px);
+   }
+
    .navLinks {
    	flex-direction: column;
    	text-align: center;
@@ -469,6 +483,11 @@ a.button2:hover, a.button2:active {
    	height: 35px;
    	margin: auto;
    	padding-top: 4px;
+   }
+
+   .logo-img {
+	   width: 140px;
+	   padding-top: 3px
    }
 
    .socialIconsAll {
