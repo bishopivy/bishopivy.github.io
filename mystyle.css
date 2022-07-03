@@ -514,7 +514,7 @@ a.button2:hover, a.button2:active {
    	display: none;
    	flex-direction: column;
    	line-height: 45px;
-   	font-size: 20px;
+   	font-size: 23px;
    }
 
    .topLinks.active {
