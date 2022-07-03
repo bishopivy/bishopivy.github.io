@@ -320,7 +320,7 @@ small {
 body {
 text-transform: uppercase;
 font-family: 'thermal'; /* lores-12, sans-serif; */
-font-weight: 700;
+font-weight: 500;
 font-style: normal;
 font-size: 19;
 letter-spacing: 0;
@@ -576,6 +576,7 @@ a.button2:hover, a.button2:active {
 
    .press-l {
 	width: 60%;
+	font-family: 'thermal'
    }
    .press-r {
 	width: 40%;
