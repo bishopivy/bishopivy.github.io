@@ -576,10 +576,12 @@ a.button2:hover, a.button2:active {
 
    .press-l {
 	width: 60%;
-	font-family: 'thermal'
+	font-family: 'thermal';
+	font-size: 19px;
    }
    .press-r {
 	width: 40%;
+	padding-top: 3px;
    }
    
    .press-c {
