@@ -375,17 +375,17 @@ a.press-row {
 	padding-right: 20px;
 	font-family: "Menlo";
 	text-transform: uppercase;
+	padding-top: 1px;
 }
 .press-c {
 	width: 60%;
-	margin: auto;
 }
 .press-r {
 	width: 10%;
 	text-align: right;
-	margin: auto;
 	font-family: "Menlo";
 	padding-left: 10px;
+	padding-top: 1px;
 }
 
 
