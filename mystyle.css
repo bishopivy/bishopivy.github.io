@@ -276,7 +276,7 @@ a.nav {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 80%;
 	max-width: 700px;
 	background-color: transparent;
 	margin: auto;
@@ -299,7 +299,7 @@ form {
 	margin: 5px;
 	font-family: 'thermal';/* lores-12, sans-serif; */
 	font-size: 16px;
-	color: #585858;
+	color: black;
 	padding: 15px;
 	font-weight: 900;
 }
@@ -312,9 +312,10 @@ h2 {
 }
 
 small {
-	font-size: 17;
+	font-size: 19;
 	color: #bfbfbf;
 	background-color: transparent;
+	text-align: center
 }
 
 body {
@@ -398,7 +399,7 @@ a.press-row {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: 'thermal';/* lores-9-wide, sans-serif; */
-	font-weight: 800;
+	font-weight: 1000;
 	font-style: normal;
 	font-size: 20px;
 	margin: auto;
@@ -417,7 +418,7 @@ a.button2 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: 'thermal';/* lores-9-wide, sans-serif; */
-	font-weight: 900;
+	font-weight: 1000;
 	font-style: normal;
 	font-size: 20px;
 	margin: auto;
