@@ -384,7 +384,7 @@ a.press-row {
 	width: 10%;
 	text-align: right;
 	font-family: "Menlo";
-	padding-left: 10px;
+	margin-left: 20px;
 	padding-top: 1px;
 }
 
