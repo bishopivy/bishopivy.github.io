@@ -342,6 +342,38 @@ margin: auto;
 	font-size: 17px;
 }
 
+.press-block {
+	width:80%; 
+	margin: auto; 
+	font-size: 16px; 
+	padding-bottom: 100px;
+	max-width: 900px
+}
+
+a.press-row {
+	display: flex;
+	flex-direction:row;
+	margin-bottom: 20px;
+}
+
+.press-l {
+	width: 30%;
+	padding-right: 20px;
+	font-family: "Menlo";
+	text-transform: uppercase;
+}
+.press-c {
+	width: 60%;
+	margin: auto;
+}
+.press-r {
+	width: 10%;
+	text-align: right;
+	margin: auto;
+	font-family: "Menlo";
+}
+
+
 .button {
 	border: 2px solid white;
 	border-radius: 3px;
@@ -524,5 +556,17 @@ a.button2:hover, a.button2:active {
    	width: 100%;
    	padding-right: 0;
    }
+
+   .press-l {
+	width: 60%;
+   }
+   .press-r {
+	width: 40%;
+   }
+   
+   .press-c {
+	display: none;
+   }
+
 }
 
