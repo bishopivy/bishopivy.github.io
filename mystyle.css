@@ -18,8 +18,12 @@
 	src: url('./fonts/Thermal-Regular.otf'); 
 } 
 @font-face { 
-	font-family: 'dited'; 
-	src: url('./fonts/Dited.otf'); 
+	font-family: 'space'; 
+	src: url('./fonts/SpaceMono-Regular.ttf'); 
+} 
+@font-face { 
+	font-family: 'space-bold'; 
+	src: url('./fonts/SpaceMono-Bold.ttf'); 
 } 
 
 img {
@@ -204,8 +208,11 @@ a.nav {
 	margin: auto;
 	letter-spacing: 1;
 	line-height: 28px;
-	font-size: 19;
+	font-size: 16;
 	margin-bottom: 100px;
+	font-family: 'space';
+	text-transform: none;
+	font-weight: 400;
 	background-color: transparent;
 }
 
@@ -298,16 +305,15 @@ form {
 	background-color: white;
 	resize: none;
 	margin: 5px;
-	font-family: 'thermal';/* lores-12, sans-serif; */
+	font-family: 'space';/* lores-12, sans-serif; */
 	font-size: 16px;
-	color: black;
+	color: grey;
 	padding: 15px;
 	font-weight: 900;
 }
 
 h2 {
   font-family: "ts_blockbold";
-  font-style: italic;
   background-color: transparent;
   font-size: 30;
 }
@@ -375,7 +381,7 @@ a.press-row {
 .press-l {
 	width: 30%;
 	padding-right: 20px;
-	font-family: "Menlo";
+	font-family: "space";
 	text-transform: uppercase;
 	padding-top: 1px;
 }
@@ -385,7 +391,7 @@ a.press-row {
 .press-r {
 	width: 10%;
 	text-align: right;
-	font-family: "Menlo";
+	font-family: "space";
 	margin-left: 20px;
 	padding-top: 1px;
 }
