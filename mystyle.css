@@ -580,6 +580,7 @@ a.button2:hover, a.button2:active {
    .credit-container {
    	width: 100%;
    	padding-right: 0;
+	padding-left: 0;
    }
 
    .press-l {
