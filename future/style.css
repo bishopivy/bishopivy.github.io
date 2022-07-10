@@ -100,7 +100,7 @@ body {
 } 
 
 .play-b {
-    width: 17px;
+    width: 15px;
     height: 15px;
 }
 
@@ -181,6 +181,10 @@ body {
     .mobile-spacer {
         display: block;
         overflow: scroll
+    }
+    .play-b {
+        width: 20px;
+        height: 20px;
     }
 }
 
