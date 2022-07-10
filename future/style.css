@@ -148,15 +148,6 @@ body {
     }
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(360deg);
-    }
-    to {
-        transform:rotate(0deg);
-    }
-}
-
 @media (max-width: 500px) {
     .ep-page {
         flex-direction: column;

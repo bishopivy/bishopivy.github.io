@@ -68,7 +68,7 @@ function hideEmail() {
 }
 
 function setLoading () {
-    setTimeout(()=>{loading=false}, 2500);
+    setTimeout(()=>{loading=false;}, 2500);
 }
 
 var spinning = true;
