@@ -1,0 +1,104 @@
+<head>
+    <title>BISHOP IVY*</title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/dd668327a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fonts/Thermal-Regular.otf">
+    <script src="future.js" defer></script>
+</head>
+
+<body onload="setLoading(); karaokeBlinker();">
+    <div class="player" id="player">
+        <a><img src="rewind.png" class="play-b" onclick="rewind()"></img></a>
+        <a><img src="play3.png" class="play-b" onclick="play()" id="play-b"></img></a>
+        <a><img src="pause.png" class="play-b"onclick="play()" id="pause-b"></img></a>
+        <a><img src="fast-forward.png" class="play-b"></img></a>
+    </div>
+    <div class ="ep-page">
+        <div class="square-container" onmousemove="point()" onmouseout ="curs()">
+            <img src="ep.jpg" alt="iris" class="ep" id="cover-art"
+            onclick="play()">
+        </div>
+        <div class="ep-info" id="ep-info">
+            <div id="menu"> 
+                IRIS<br>
+                bishop ivy<br>
+                <a href="https://bishopivy.com">stream</a>
+                <a onclick="news()" style="text-decoration: underline;">sign&nbspup</a>
+                <a href="https://bishopivy.com">store</a><br>
+                 <a onclick="play()"  
+                 class="karaoke" id="karaoke">&nbsp&nbspkaraoke _</a><br> 
+                <a href="https://instagram.com/bishopivy" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/bishopivy" target="_blank">
+                    <i class="fa-brands fa-youtube"></i></a>
+
+                <a href="https://facebook.com/bishopivyofficial" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="https://www.tiktok.com/@bishopivy?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i></a>
+
+                <a target="_parent" href="https://twitter.com/bshpivy" target="_blank">
+                    <i class="fa-brands fa-twitter"></i></a>
+                
+                
+            </div>
+        
+            <div class="news" id="newsletter" >
+                <a onclick="nonews()">back</a>
+            </div>
+            <div class="lyric-container" id="lyric-container">
+                <div class="lyrics" id="lyrics"></div>
+            </div>
+        </div>
+        <div class="mobile-spacer"></div>
+    </div>
+    <div class="contact" id="contact"
+        onmousemove="showEmail()" onmouseout="hideEmail()">
+        contact
+    </div>
+</body>
+
+
+
+
+<!--
+                save me <br>
+                hold me down <br>
+                fading fast into the dust <br> 
+                <br>
+                always wanted to run to the hills <br>
+                if i have to exist, then i'll hide in the mist <br>
+                and cut the telephone wire <br>
+                better on my own, i thought<br>
+                i would dream of a beach house, solo at sea <br>
+                but in reality, i just break at the seams <br>
+                in my dark apartment <br>
+                that no one ever sees <br>
+                <br>
+                but won't you <br>
+                save me <br>
+                hold me down <br>
+                fading fast into the dust <br>
+                blow into the wind <br>
+                just a memory to my kin <br>
+                i can only talk to the walls <br>
+                even then the words dissolve <br>
+                <br>
+                how was i so blissfully brave <br>
+                i would gleefully dive to another's embrace <br>
+                so oblivous to where it'd go <br>
+                never thought we'd turn to smoke <br>
+                but that's in the past now, and i go on dates <br>
+                i try not to notice her nails, the paint <br>
+                are baby blue just like yours were <br>
+                the memories just flood <br>
+                <br>
+                gotta get back to the outside <br>
+                i might be blinded by it <br>
+                my eyes are used to twilight <br>
+                <br>
+                really don't know how i got this lost <br>
+                i watch my friendships fade into fog <br>
+                maybe we're both lone ghosts just waiting round 
+                -->
