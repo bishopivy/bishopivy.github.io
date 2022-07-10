@@ -51,11 +51,12 @@ body {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     width: 100%;
-    animation-name: fadein, spin, spin;
-    animation-duration: 0.25s, 20s, 20s;
-    animation-delay: 0s, 0s, 20s;
-    animation-iteration-count: 1, 1, infinite;
-    animation-timing-function: ease-in, ease-in, linear; 
+    transform: rotate(360deg);
+
+    animation-name: fadein;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    */
 }
 
 .lyric-container {

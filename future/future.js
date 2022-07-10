@@ -69,6 +69,22 @@ function setLoading () {
     setTimeout(()=>{loading=false}, 2500);
 }
 
+var spinning = true;
+function spin() {
+    var angle = 360.0;
+    var slower = 0;
+    id = setInterval(spinHelper, 10) 
+    function spinHelper() {
+        if (slower < 1) {
+            slower += 0.002
+        }
+        if (spinning) {
+            angle -= 0.3 * slower;
+            coverArt.style.transform = "rotate(" + angle.toString() + "deg)";
+        }  
+    }
+}
+
 function play() { 
     if (loading) {
         return;
@@ -78,6 +94,7 @@ function play() {
     }
     if (fast.paused || (!(fast.currentTime))){
         fast.play();
+        spinning = true;
         coverArt.style.animationPlayState = "running";
         lyricCon.style.display = "block";
         menu.style.display = "none";
@@ -87,6 +104,7 @@ function play() {
         pauseB.style.display = "inline";
     } else {
         fast.pause();
+        spinning = false;
         coverArt.style.animationPlayState = "paused";
         lyricCon.style.display = "none";
         menu.style.display = "block";
