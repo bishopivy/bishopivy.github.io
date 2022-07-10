@@ -9,6 +9,8 @@ const newsletter = document.getElementById('newsletter')
 const contact = document.getElementById('contact')
 const karaoke = document.getElementById('karaoke')
 
+const mobileBreak = 500;
+
 var loading = true;
 
 var fast = new Audio('fading-fast.mp3');
@@ -86,7 +88,7 @@ function spin() {
 }
 
 function play() { 
-    if (loading) {
+    if (loading && (window.innerWidth > mobileBreak)) {
         return;
     }
     if (!(fast.currentTime)) {
@@ -111,6 +113,10 @@ function play() {
 
         playB.style.display = "inline";
         pauseB.style.display = "none";
+
+        if (window.innerWidth <= mobileBreak) {
+            player.style.display = "none";
+        }
 
     }
 }
