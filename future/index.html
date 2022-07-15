@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./fonts/Thermal-Regular.otf">
     <script src="future.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../header-resize.js" defer></script>
 </head>
 
 <body onload="setLoading(); karaokeBlinker(); spin();">
@@ -47,8 +48,10 @@
             </div>
         
             <div class="news" id="newsletter" >
+                <iframe src="../newsletter.html" 
+			    scrolling="no" frameBorder=0 width=100% id="news-iframe"></iframe>
+                <div class="newsletter-ty" id="news-thank-you">🤍 thank u 🤍</div><br>
                 <a onclick="nonews()">back</a>
-                <div class="lyrics">bruh!@#$%^&*()</div>
             </div>
             <div class="lyric-container" id="lyric-container">
                 <div class="lyrics" id="lyrics"></div>

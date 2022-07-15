@@ -88,6 +88,7 @@ function spin() {
 }
 
 function play() { 
+    nonews();
     if (loading && (window.innerWidth > mobileBreak)) {
         return;
     }

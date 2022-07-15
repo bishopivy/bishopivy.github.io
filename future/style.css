@@ -77,6 +77,15 @@ body {
     display: none;
 }
 
+.newsletter-ty {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	display: none;
+	color: #bfbfbf;
+	font-size: 17px;
+}
+
 .contact {
     position: absolute;
     bottom: 0;
