@@ -146,7 +146,7 @@ function curs() {
     document.body.style.cursor = "auto";
 }
 
-function blinker(txt, counter) {
+function blinker(txt, counter, wholeLine) {
     [blinkOn, blinkCounter] = counter;
     counter[1] += 1;
     if (blinkCounter % 20 == 0) {
@@ -177,7 +177,7 @@ function glitchText(txt, j) {
 function karaokeBlinker() {
     var counter = [false, 0]
     setInterval((function (){
-        karaoke.innerHTML = "&nbsp&nbsp" + blinker("karaoke", counter);}), 
+        karaoke.innerHTML = "&nbsp&nbsp" + blinker("karaoke", counter, false);}), 
         30);
 }
 
@@ -207,7 +207,7 @@ function displayLyrics() {
                     j = 0;
                 }
             }
-            lyrics.innerHTML = blinker(txt, counter)
+            lyrics.innerHTML = blinker(txt, counter, false);
         } else {
             txt = "";
             clearInterval(id);
