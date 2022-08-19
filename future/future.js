@@ -208,3 +208,8 @@ function displayLyrics() {
 }
 displayLyrics();
 
+document.addEventListener('keydown', 
+(event) => {
+    if (event.key == "ArrowLeft") {rewind();};
+    if (event.key == " ") {play();};
+});
