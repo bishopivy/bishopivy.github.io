@@ -24,7 +24,7 @@ const fastLyrics = [ // the time is when the corresponding lyrics ENDS
     ["if i have to exist, then i'll hide in the mist", 23.9],
     ["and cut the telephone wire", 28.7],
     ["better on my own i thought", 32.4],
-    ["i would dream of a beach house, solo at sea", 36.3],
+    ["i would dream of a beach house, solo at sea", 36.5],
     ["but in reality, i just break at the seams", 40.9],
     ["in my dark apartment", 44.8],
     ["that no one ever sees", 51.4],
@@ -92,10 +92,7 @@ function play() {
     if (loading && (window.innerWidth > mobileBreak)) {
         return;
     }
-    if (!(fast.currentTime)) {
-        displayLyrics();
-    }
-    if (fast.paused || (!(fast.currentTime))){
+    if (fast.paused || (!(fast.currentTime))){ // if not playing
         fast.play();
         spinning = true;
         coverArt.style.animationPlayState = "running";
@@ -105,7 +102,7 @@ function play() {
         player.style.display = "block";
         playB.style.display = "none";
         pauseB.style.display = "inline";
-    } else {
+    } else { // PAUSE
         fast.pause();
         spinning = false;
         coverArt.style.animationPlayState = "paused";
@@ -161,7 +158,7 @@ function blinker(txt, counter) {
 
 function glitchText(txt, j) {
     randTime = 6;
-    chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$%&*"
+    chars = "ABCFGHIJKLOQSTVWXYZ1234567890@#$%&*"
     res = ""
     for (let i = 0; i < (Math.min(j, txt.length)); i++) {
         if ((i < (j - randTime)) || txt[i] == " ") {
@@ -206,8 +203,8 @@ function displayLyrics() {
         } else {
             txt = "";
             clearInterval(id);
-        }
-        
+        } 
     }
 }
+displayLyrics();
 
