@@ -87,7 +87,7 @@ const lyric_times = [
         ["Burning on my own now", minSec(3,26)]
     ],
     [
-        ["4. I'm nothing but a camera on my own", minSec(0, 5)]
+        ["6. I'm nothing but a camera on my own", minSec(0, 5)]
     ],
     [
         ["7. Fading Fast", 3.2],
