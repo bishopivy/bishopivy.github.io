@@ -1,165 +1,66 @@
 <head>
-	<title>BISHOP IVY*</title>
-	<link rel="stylesheet" href="https://use.typekit.net/miw6dhd.css">
-	<link rel="stylesheet" href="./fonts/TS Block Bold.ttf">
-	<link rel="stylesheet" href="./fonts/Thermal-Regular.otf">
-	<link rel="stylesheet" type = "text/css" href="mystyle.css">
-	<script src="https://kit.fontawesome.com/dd668327a0.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="icon" type="image/x-icon" href = "./images/IVY.png">
-	<meta property="og:image" content="./images/bishop-ivy.jpg">
-	<script src="header-resize.js" defer></script>
-
-	<meta name="description" content="Official Website for Bishop Ivy. New EP parasocial out now.">
+    <title>BISHOP IVY*</title>
+    <link rel="stylesheet" type = "text/css" href="future_style.css">
+    <script src="https://kit.fontawesome.com/dd668327a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fonts/Thermal-Regular.otf">
+    <script src="future.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../header-resize.js" defer></script>
 </head>
 
-<script>
+<body onload="setLoading(); karaokeBlinker(); spin();">
+    <div class="player" id="player">
+        <a><img src="images/rewind2.png" class="play-b" onclick="rewind()"></img></a>
+        <a><img src="images/play2.png" class="play-b" onclick="play()" id="play-b"></img></a>
+        <a><img src="images/pause2.png" class="play-b"onclick="play()" id="pause-b"></img></a>
+        <a><img src="images/fast-forward2.png" class="play-b" onclick="fastForward()"></img></a>
+    </div>
+    <div class ="ep-page">
+        <div class="square-container" onmousemove="point()" onmouseout ="curs()">
+            <img src="images/ep.jpg" alt="iris" class="ep" id="cover-art"
+            onclick="play()">
+        </div>
+        <div class="ep-info" id="ep-info">
+            <div id="menu"> 
+                IRIS<br>
+                bishop ivy<br>
+                <a href="https://h-r.fans/bishop-iris">stream</a>
+                <a onclick="news()" style="text-decoration: underline;">sign&nbspup</a>
+                <a href="https://bishopivy.com/archive">enter site</a><br>
+                
+                <a onmousedown="play()" onmousemove="point()" onmouseout ="curs()"  
+                 class="karaoke" id="karaoke">&nbsp;&nbsp;karaoke _</a><br> 
+                 <a href="https://instagram.com/bishopivy" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/bishopivy" target="_blank">
+                    <i class="fa-brands fa-youtube"></i></a>
 
-	function thumb(wee1, wee2) {
-	  document.getElementById(wee1).style.display = "none";
-	  document.getElementById(wee2).style.display = "none";
-	}
+                <a href="https://facebook.com/bishopivyofficial" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a>
 
-</script>
+                <a href="https://www.tiktok.com/@bishopivy?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i></a>
 
-
-
-<body style="background-color: black">
-	<iframe src="./header.html" scrolling="no" frameBorder=0 class="header-iframe" id="header-iframe"></iframe>
-	<div class="mobile-break" style="height: 90px"></div>
-
-	<div class="page-content" style="background-color: 0; padding-top: 0px">
-		<! para video >
-		<div class ="container-iframe">
-			<iframe class ="inner-iframe" src="https://www.youtube.com/embed/IUfClyd86DQ?rel=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
-		</div>
-
-	</div>
-	<div class="page-content" style="padding-top: 50px">
-		<! park video >
-        <div class = "video-holder">
-			<div class ="container-iframe" style="padding-top:100%; width: 80%">
-				<video class ="inner-iframe" controls
-				src="https://drive.google.com/uc?export=download&id=1c4-b6lO0e1tCjbPZvQw0Iu4X3BTRrdcX" 
-				poster="./images/park-tall-inverted.jpg"
-				></video> 
-			</div>
-		</div>
-
-		<div class="break"style="height:20"></div>
-		<a class="button2" href="https://ffm.to/bishoppark">STREAM</a>
-		<div class="break"style="height:150"></div>
-
-		<! tunnel video >
-		<div class="video-holder">		
-			<div class ="container-iframe">
-				<iframe class ="inner-iframe" src="https://www.youtube.com/embed/2YzhMEGBPAI?rel=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
-			</div>
-		</div>
-
-		<div class="break" style="height:50"></div>
-		<a class="button2"a href="https://ffm.to/ivy-tunnel">STREAM</a>
-
-		<div class="break"style="height:100"></div>
-
- 		<! spring video >
-		<div class="video-holder">
-			<div class ="container-iframe">
-				<iframe class ="inner-iframe" src="https://www.youtube.com/embed/y1EhrquOclI?rel=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
-			</div>
-			<a class="thumbnail" id="in-spring">
-				<img src="./images/in-spring.jpg" alt="In Spring" width=100%>
-			</a>
-			<div class="play-button-container" id="in-spring-p">
-				<a class="play-button" >
-					<img src="./images/play-button.png" alt="Play" width=50px onclick="thumb('in-spring', 'in-spring-p')">
-				</a>
-			</div>
-		</div>
-
-		<div class="break"style="height:150"></div>
-
-		<! ivy live video >
-		<div class="video-holder">
-			<div class ="container-iframe">
-				<iframe class ="inner-iframe" src="https://www.youtube.com/embed/GukSWnTlKHo?rel=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
-			</div>
-			<a class="thumbnail" id="ivy">
-				<img src="./images/ivy-live.jpg" alt="Ivy Dreams Live" width=100%>
-			</a>
-			<div class="play-button-container" id="ivy-p">
-				<a class="play-button" >
-					<img src="./images/play-button.png" alt="Play" width=50px onclick="thumb('ivy', 'ivy-p')">
-				</a>
-			</div>
-		</div>
-
-		<div class="break"style="height:150"></div>
-
-		<! 15 video >
-		<div class="video-holder" >
-			<div class ="container-iframe">
-				<iframe class ="inner-iframe" src="https://www.youtube.com/embed/6hNK4AvDdwQ?rel=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe> 
-			</div>
-			<a class="thumbnail" id="15">
-				<img src="./images/15.jpg" alt="15" width=100%>
-			</a>
-			<div class="play-button-container" id="15-p">
-				<a class="play-button" >
-					<img src="./images/play-button.png" alt="Play" width=50px onclick="thumb('15', '15-p')">
-				</a>
-			</div>
-		</div>
-
-		<div class="break"style="height:150"></div>
-
-		<!ATT ALBUM>
-		<div style="width: 100%; max-width: 500; margin: auto; background-color: transparent">
-			<div class="container-square">
-				<img class="inner-iframe" src="./images/att.jpg" alt="ATT">
-			</div>
-		</div>
-
-		<div class="break" style="height: 50"></div>
-		<a class="button2" href="https://awal.lnk.to/vDRjF">STREAM</a>
-
-		<div class="break" style="height: 20"></div>
-		<a class="button2" href="./all-things-temporary-credits">CREDITS / LYRICS</a>
-
-		<div class="break"style="height:150"></div>
-
-		<! 15 live video >
-		<div class="video-holder">
-			<div class ="container-iframe">
-				<iframe class ="inner-iframe" src="https://www.youtube.com/embed/ux941sOZRjU?rel=0" title="YouTube video player" frameborder="0" allowfullscreen ></iframe> 
-			</div>
-			<a class="thumbnail" id="15-live">
-				<img src="./images/15-live.jpg" alt="15 live" width=100%>
-			</a>
-			<div class="play-button-container" id="15-live-p">
-				<a class="play-button" >
-					<img src="./images/play-button.png" alt="Play" width=50px onclick="thumb('15-live', '15-live-p')">
-				</a>
-			</div>
-		</div>
-	</div>
-
-
-    <!NEWSLETTER>
-	<div class = "page-content" id="newsletter" 
-	  style="background-color: #1e1e1e; 
-	  padding-top: 50px; padding-left: 0; padding-right: 0">
-		<div class="newsletter-holder">
-			<h2>EMAIL LIST</h2> 
-			<div class = "break" style="height:20"></div>
-			<small>get updates for shows + new music</small>
-			<div class = "break" style="height:30"></div>
-			<iframe src="newsletter.html" 
+                <a target="_parent" href="https://twitter.com/bshpivy" target="_blank">
+                    <i class="fa-brands fa-twitter"></i></a>
+                
+                
+            </div>
+        
+            <div class="news" id="newsletter" >
+                <iframe src="../newsletter.html" 
 			    scrolling="no" frameBorder=0 width=100% id="news-iframe"></iframe>
-		</div>
-		<div class="newsletter-ty" id="news-thank-you">🤍 thank u 🤍</div>
-	</div>
-
-	<iframe src="./footer.html" frameBorder=0 style="width:100%; height: 304;"></iframe>
+                <div class="newsletter-ty" id="news-thank-you">🤍 thank u 🤍</div><br>
+                <a onclick="nonews()">back</a>
+            </div>
+            <div class="lyric-container" id="lyric-container">
+                <div class="lyrics" id="lyrics"></div>
+            </div>
+        </div>
+        <div class="mobile-spacer"></div>
+    </div>
+    <div class="contact" id="contact"
+        onmousemove="showEmail()" onmouseout="hideEmail()">
+        contact
+    </div>
 </body>
