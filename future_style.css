@@ -124,6 +124,10 @@ body {
     margin-bottom: 0px;
 }
 
+.fa-brands {
+    font-size: 20px;
+}
+
 @keyframes fadein {
     from {
         opacity: 0
